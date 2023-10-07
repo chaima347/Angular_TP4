@@ -1,0 +1,4 @@
+<p>{{pizza.nom | titlecase}}</p>
+<img [src]="pizza.image" alt="img">
+<span>prix : {{pizza.prix | number: '2.3'}}</span>
+<span *ngIf="pizza.isveg"> végetrerian </span>
