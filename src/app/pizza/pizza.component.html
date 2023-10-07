@@ -1,4 +1,12 @@
-<p>{{pizza.nom | titlecase}}</p>
-<img [src]="pizza.image" alt="img">
-<span>prix : {{pizza.prix | number: '2.3'}}</span>
-<span *ngIf="pizza.isveg"> végetrerian </span>
+<div [ngClass]="{'bg-warning': !pizza.isveg}" class="list-group-item d-flex justify-content-between">
+
+    <div>
+
+        <p class="badge bg-dark">{{pizza.nom | titlecase}}</p>
+        <img [src]="pizza.image" alt="img">
+    </div>
+    <div>
+        <span>prix : {{pizza.prix | number: '2.3'}}</span>
+
+    </div>
+</div>
